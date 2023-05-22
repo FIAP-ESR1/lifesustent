@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*, html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #F8FCFF;
   font-family: 'Roboto', sans-serif;
@@ -28,11 +32,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2.title {
+  position: relative;
+  min-width: 200px;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+h2.title:before, h2.title:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  height: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transform: rotate(120deg);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+h2.title:before {
+  left: 30%;
+  background: #82A1FF;
+  width: 40px;
+}
+
+h2.title:after {
+  left: 34%;
+  width: 60px;
+  border: 2px solid #82A1FF;
 }
 
 input {
@@ -60,6 +92,20 @@ button, .button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button span, .button span {
+  margin-left: 8px;
+}
+
+button:hover, .button:hover {
+  background: #6b84e6;
+  box-shadow: 0px 4px 4px rgba(125, 151, 244, 0.25);
+}
+
+button:hover span, .button:hover span {
+  animation: slideRight 1s infinite;
 }
 
 /* HEADER -------------------------------------------------- */
@@ -100,6 +146,10 @@ header nav ul li a {
   font-size: 12px;
   font-weight: 500;
   line-height: 17px;
+}
+
+header nav ul li a:hover {
+  color: #82A1FF;
 }
 
 /* HERO ---------------------------------------------------- */
@@ -209,6 +259,15 @@ header nav ul li a {
   text-align: center;
 }
 
+.hiw .cards .card:hover {
+  box-shadow: 0px 8px 8px #82A1FF, 0px 8px 8px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.hiw .cards .card:hover .card-image img {
+  animation: shake 1s ease-in-out;
+}
+
 /* FILL ---------------------------------------------------- */
 
 .fill {
@@ -286,6 +345,23 @@ header nav ul li a {
 
 .usecase .steps .step ul {
   padding-left: 20px;
+}
+
+.usecase .steps .step ul li {
+  position: relative;
+  list-style: none;
+}
+
+.usecase .steps .step ul li:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 10px;
+  left: -20px;
+  background: #82A1FF;
+  border-radius: 50%;
+  transform: translateY(-50%);
 }
 
 /* DEMO ---------------------------------------------------- */
@@ -369,6 +445,7 @@ footer .logo {
   font-size: 15px;
   line-height: 18px;
   color: #fff;
+  text-decoration: none;
 }
 
 footer p {

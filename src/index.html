@@ -6,23 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LifeSustent</title>
+  <link rel="stylesheet" href="./assets/css/keyframes.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap" />
+  <script src="https://kit.fontawesome.com/1e9ea76602.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <div class="logo">
+      <a href="#" class="logo">
         <img src="./assets/img/logo.svg" alt="LifeSustent" />
-      </div>
+      </a>
 
       <nav>
         <ul>
-          <li><a href="#">Projeto</a></li>
-          <li><a href="#">Caso de uso</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#how-it-works">Projeto</a></li>
+          <li><a href="#usecase">Caso de uso</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
 
         <a href="#" class="button">Começar</a>
@@ -36,7 +38,7 @@
         <h1>Uma solução sustentável para cidades inteligentes</h1>
         <p>Descubra como podemos ajudar sua cidade a monitorar e melhorar a qualidade do ar, da água e a sonoridade em
           tempo real, impulsionando o desenvolvimento de ambientes urbanos saudáveis e sustentáveis.</p>
-        <a href="#" class="button">Solicitar demonstração</a>
+        <a href="#" class="button">Solicitar demonstração <span class="fa-solid fa-arrow-right"></span></a>
       </div>
 
       <div class="hero-image">
@@ -50,7 +52,7 @@
       <img src="./assets/img/logo-fiap.svg" alt="FIAP - Faculdade de Informática e Administração Paulista" />
     </section>
 
-    <section class="hiw">
+    <section id="how-it-works" class="hiw">
       <h2 class="title">Como funciona?</h2>
       <p>Combinando hardware inovador e software avançado, a LifeSustent oferece uma abordagem holística para o
         monitoramento ambiental. Nosso sistema integrado é projetado para fornecer informações precisas e acionáveis que
@@ -107,7 +109,7 @@
       </div>
     </section>
 
-    <section class="usecase">
+    <section id="usecase" class="usecase">
       <h2 class="title">Caso de uso</h2>
       <p>A cidade de Urbana está enfrentando desafios relacionados à qualidade do ar em uma área específica da região
         central. A fim de abordar esse problema e tomar medidas adequadas, a LifeSustent oferece seu software de
@@ -186,7 +188,7 @@
     </section>
   </div>
 
-  <section class="demo">
+  <section id="contact" class="demo">
     <div class="container">
       <div class="demo-content">
         <h3>Não perca mais tempo!</h3>
@@ -198,18 +200,18 @@
       <form class="demo-form" autocomplete="off">
         <input type="text" name="name" placeholder="Nome" />
         <input type="email" name="email" placeholder="E-mail" />
-        <button type="submit">Agendar demonstração</button>
+        <button type="submit">Agendar demonstração <span class="fa-solid fa-calendar"></span></button>
       </form>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <div class="logo">
+      <a href="#" class="logo">
         <img src="./assets/img/logo-inverse.svg" alt="LifeSustent" />
 
         <p>Todos os direitos reservados.</p>
-      </div>
+      </a>
 
       <p>Feito com &lt;3 na Fiap</p>
     </div>

@@ -1,6 +1,6 @@
 # LifeSustent Frontend - ESR1
 
-O site pode ser acessado em [Github Pages](https://lifesustent.github.io/lifesustent/)
+O site pode ser acessado em [Github Pages](https://lifesustent.github.io/lifesustent/).
 
 ---
 
